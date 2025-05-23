@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Royale - Luxury Beachside Escape</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Open+Sans:wght@400;500;600&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<!-- Preloader -->
+<div id="preloader">
+    <div class="preloader-logo">HR</div>
+</div>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="#hero">Hotel Royale</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link active" href="#hero">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#rooms">Rooms</a></li>
+                <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section id="hero" class="hero-section">
+    <div class="hero-content">
+        <div class="hero-logo">HR</div>
+        <h1>Hotel Royale</h1>
+        <p>A Modern & Luxury Beachside Escape</p>
+        <a href="#rooms" class="btn-hero">Explore Rooms</a>
+    </div>
+</section>
+
+<!-- About Section -->
+<section id="about">
+    <div class="container">
+        <h2 class="section-title text-center">About Hotel Royale</h2>
+        <p class="lead">Hotel Royale is a luxury beachside escape, offering elegant rooms, gourmet dining, and
+            breathtaking views. Whether you're here for relaxation or romance, we deliver an unforgettable stay with
+            world-class amenities and personalized service.</p>
+    </div>
+</section>
+
+<!-- Rooms Section -->
+<section id="rooms">
+    <div class="container">
+        <h2 class="section-title text-center">Our Rooms</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="room-card">
+                    <div class="room-image"></div>
+                    <div class="card-body">
+                        <h5 class="card-title">Deluxe Suite</h5>
+                        <p class="card-text">Ocean view, king bed, spa bath, private balcony with stunning sunset
+                            views.</p>
+                        <a href="#contact" class="btn-room">Book Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="room-card">
+                    <div class="room-image"></div>
+                    <div class="card-body">
+                        <h5 class="card-title">Premium Ocean View</h5>
+                        <p class="card-text">Spacious suite with panoramic ocean views, luxury amenities, and private
+                            terrace.</p>
+                        <a href="#contact" class="btn-room">Book Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="room-card">
+                    <div class="room-image"></div>
+                    <div class="card-body">
+                        <h5 class="card-title">Royal Penthouse</h5>
+                        <p class="card-text">Ultimate luxury with private pool, butler service, and breathtaking 360°
+                            views.</p>
+                        <a href="#contact" class="btn-room">Book Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Gallery Section -->
+<section id="gallery">
+    <div class="container">
+        <h2 class="section-title text-center">Gallery</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="gallery-item"></div>
+            </div>
+            <div class="col-md-4">
+                <div class="gallery-item"></div>
+            </div>
+            <div class="col-md-4">
+                <div class="gallery-item"></div>
+            </div>
+            <div class="col-md-4">
+                <div class="gallery-item"></div>
+            </div>
+            <div class="col-md-4">
+                <div class="gallery-item"></div>
+            </div>
+            <div class="col-md-4">
+                <div class="gallery-item"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Map Section -->
+<section id="map-section">
+    <div class="container">
+        <h2 class="section-title text-center">Our Location</h2>
+        <div class="map-container">
+            <div class="map-info">
+                <h4>Find Us Here</h4>
+                <p><span class="icon">📍</span>123 Beachfront Avenue, Paradise Bay</p>
+                <p><span class="icon">📞</span>+1 (555) 123-4567</p>
+                <p><span class="icon">✉️</span>info@hotelroyale.com</p>
+                <p><span class="icon">🌊</span>Directly on the beach</p>
+            </div>
+            <div id="map"></div>
+            <div class="map-overlay">
+                Premium Beachfront Location
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact">
+    <div class="container">
+        <h2 class="section-title text-center">Contact Us</h2>
+        <form class="contact-form" id="contactForm">
+            <div class="mb-3">
+                <input type="text" class="form-control" placeholder="Your Name" required>
+            </div>
+            <div class="mb-3">
+                <input type="email" class="form-control" placeholder="Your Email" required>
+            </div>
+            <div class="mb-3">
+                <textarea class="form-control" placeholder="Your Message" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn-contact">Send Message</button>
+        </form>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <p class="mb-0">&copy; 2025 Hotel Royale. Crafted with elegance.</p>
+    </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
