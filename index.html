@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Open+Sans:wght@400;500;600&display=swap"
           rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -62,7 +61,7 @@
         <div class="row g-4">
             <div class="col-md-4">
                 <div class="room-card">
-                    <div class="room-image"></div>
+                    <div class="room-image" style="background-image: url('images/rooms/deluxe-suite.jpg'); background-size: cover; background-position: center;"></div>
                     <div class="card-body">
                         <h5 class="card-title">Deluxe Suite</h5>
                         <p class="card-text">Ocean view, king bed, spa bath, private balcony with stunning sunset
@@ -73,7 +72,7 @@
             </div>
             <div class="col-md-4">
                 <div class="room-card">
-                    <div class="room-image"></div>
+                    <div class="room-image" style="background-image: url('images/rooms/premium-ocean-view.jpg'); background-size: cover; background-position: center;"></div>
                     <div class="card-body">
                         <h5 class="card-title">Premium Ocean View</h5>
                         <p class="card-text">Spacious suite with panoramic ocean views, luxury amenities, and private
@@ -84,7 +83,7 @@
             </div>
             <div class="col-md-4">
                 <div class="room-card">
-                    <div class="room-image"></div>
+                    <div class="room-image" style="background-image: url('images/rooms/royal-penthouse.jpeg'); background-size: cover; background-position: center;"></div>
                     <div class="card-body">
                         <h5 class="card-title">Royal Penthouse</h5>
                         <p class="card-text">Ultimate luxury with private pool, butler service, and breathtaking 360°
@@ -129,16 +128,8 @@
     <div class="container">
         <h2 class="section-title text-center">Our Location</h2>
         <div class="map-container">
-            <div class="map-info">
-                <h4>Find Us Here</h4>
-                <p><span class="icon">📍</span>123 Beachfront Avenue, Paradise Bay</p>
-                <p><span class="icon">📞</span>+1 (555) 123-4567</p>
-                <p><span class="icon">✉️</span>info@hotelroyale.com</p>
-                <p><span class="icon">🌊</span>Directly on the beach</p>
-            </div>
-            <div id="map"></div>
-            <div class="map-overlay">
-                Premium Beachfront Location
+            <div id="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d253811.35450921967!2d80.20839640252716!3d6.289681375295644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae14aeca9321a0d%3A0x3fa1b73e2f49fb36!2sAnantara%20Peace%20Haven%20Tangalle%20Resort!5e0!3m2!1sen!2slk!4v1748004757599!5m2!1sen!2slk" style="width:100%; height:100%; border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
     </div>
@@ -166,7 +157,7 @@
 <!-- Footer -->
 <footer>
     <div class="container">
-        <p class="mb-0">&copy; 2025 Hotel Royale. Crafted with elegance.</p>
+        <p class="mb-0">© 2025 Hotel Royale. Crafted with elegance.</p>
     </div>
 </footer>
 
