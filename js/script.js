@@ -235,3 +235,16 @@ document.addEventListener('DOMContentLoaded', function() {
         observer.observe(carousel);
     }
 });
+
+document.querySelectorAll('.social-icon').forEach(icon => {
+    icon.addEventListener('click', (e) => {
+        e.preventDefault();
+        const platform = icon.getAttribute('aria-label');
+        const url = {
+            'Facebook': 'https://facebook.com/hotelroyale',
+            'Instagram': 'https://instagram.com/hotelroyale',
+            'Twitter': 'https://twitter.com/hotelroyale'
+        }[platform];
+        if (url) window.open(url, '_blank');
+    });
+});

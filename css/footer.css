@@ -1,0 +1,120 @@
+@import "style.css";
+
+:root {
+    --primary-navy: #0C1F3F;
+    --secondary-beige: #D8C4A2;
+    --accent-teal: #5C8A89;
+    --base-white: #F8F7F3;
+    --text-dark: #1E1E1E;
+    --gold-accent: #FFD700;
+}
+
+.footer {
+    background: var(--primary-navy);
+    color: var(--base-white);
+    padding: 3rem 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+.footer-brand {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.footer-brand h3 {
+    color: var(--gold-accent);
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.footer-brand p {
+    color: var(--secondary-beige);
+    font-size: 1.1rem;
+}
+
+.footer-nav {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.footer-nav a {
+    color: var(--base-white);
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+    position: relative;
+}
+
+.footer-nav a::after {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background: var(--gold-accent);
+    transition: width 0.3s ease;
+}
+
+.footer-nav a:hover {
+    color: var(--gold-accent);
+}
+
+.footer-nav a:hover::after {
+    width: 100%;
+}
+
+.footer-social {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: var(--accent-teal);
+    color: var(--base-white);
+    text-decoration: none;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.social-icon:hover {
+    background: var(--gold-accent);
+    transform: scale(1.1);
+}
+
+.footer-copyright {
+    text-align: center;
+    font-size: 0.9rem;
+    color: var(--secondary-beige);
+    border-top: 1px solid var(--secondary-beige);
+    padding-top: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    .footer-nav {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+}
