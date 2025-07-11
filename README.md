@@ -1,6 +1,6 @@
 # Hotel Website
 
-![Hotel Website Banner](assets/images/banner.png)
+![Hotel Website Banner](./screenshots/ss-1.png)
 
 A modern, responsive hotel website with booking capabilities, room showcases, and administrative features.
 
